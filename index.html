@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<p style="text-align: center; font-size: 50px;"><img src="logo.png" width="156" height="163" alt=""/></p>
+<p style="text-align: center; font-size: 50px;"><strong>HOT BEANS WEB</strong></p>
+<div class="topnav">
+	<a href="index.html" target="_self"> Home</a>
+	<a href="job Specification.html" target="_self">Job Specification</a>
+	<a href="courses.html" target="_self">Courses</a>
+	<a href="team.html" target="_self">Team</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h1>Trends and Opportunities In The IT Industry (with Matt Lee)</h1>
+    <h2>&nbsp;</h2>
+    <p><iframe width="360" height="315" src="https://www.youtube.com/embed/LN8WE4OtuhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;</p>
+  </div>
+  
+  <div class="column middle">
+    <h2><strong>HOME PAGE</strong></h2>
+    <p>Welcome to our IT recruitment website, where we connect the brightest IT talent with the best companies in the industry.</p>
+    <p>Our platform is designed to help IT professionals find their dream job and for companies to find the right talent to meet their technology needs. We specialize in connecting job seekers with opportunities in the fields of software development, cybersecurity, data science, artificial intelligence, and more.</p>
+    <p>For job seekers, we offer a comprehensive job search platform that makes it easy to find relevant job openings in the IT industry. Our platform allows you to filter job listings based on job type, location, salary, and other important criteria to ensure you find the perfect fit for your career goals.</p>
+    <p>For employers, we offer a range of recruitment solutions tailored to your needs. Whether you're looking to fill a permanent position, hire a contractor, or build an entire team, we can help you find the best IT talent available. Our experienced team of recruiters works closely with employers to understand their specific requirements and find the best candidates for their needs.</p>
+    <p>We also offer a range of additional services, including resume writing and interview coaching, to help job seekers improve their chances of landing their dream job. For employers, we can provide candidate assessments and other services to help ensure that you find the right candidate for your open positions.</p>
+    <p>At our IT recruitment website, we are committed to helping job seekers and employers achieve their goals. With our cutting-edge technology and personalized approach to recruitment, we are confident that we can help you find the perfect match. Explore our website to learn more about our services or contact us today to get started.</p>
+  </div>
+  
+  <div class="column side">
+    <h1>The 7 Biggest Future Trends In Healthcare</h1>
+    <h2>&nbsp;</h2>
+    <p><iframe width="360" height="315" src="https://www.youtube.com/embed/V680nMGpeEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;</p>
+  </div>
+  <p>&nbsp;</p>
+  <p>
+    <map name="MapMap">
+      <area shape="circle" coords="82,123,21" href="#">
+    </map>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+
+<div class="footer">
+  <p><img src="Connect-with-Us-Social-Icons-in-Astra-Footer-Section.jpg" alt="" width="690" height="212" usemap="#Map"/>
+    <map name="Map"><area shape="circle" coords="344,125,21" href="https://www.youtube.com/" target="_blank"><area shape="circle" coords="82,123,21" href="https://en-gb.facebook.com/" target="_blank" alt=""><area shape="circle" coords="609,124,21" href="https://blog.hubspot.com/blog/tabid/6307/bid/5847/a-marketer-s-guide-to-html5.aspx" target="_blank"><area shape="circle" coords="543,124,21" href="https://www.google.com/gmail/about/" target="_blank" alt=""><area shape="circle" coords="478,127,21" href="https://www.whatsapp.com/" target="_blank" alt=""><area shape="circle" coords="411,125,21" href="https://uk.indeed.com/" target="_blank"><area shape="circle" coords="277,124,21" href="https://www.instagram.com/" target="_blank"><area shape="circle" coords="145,126,21" href="https://twitter.com" target="_blank">
+      <area shape="circle" coords="211,125,21" href="https://www.pinterest.co.uk/" target="_blank">
+    </map>
+  </p>
+</div>
+  
+</body>
+</html>
