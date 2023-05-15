@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 100%
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<p style="text-align: center; font-size: 50px;"><img src="logo.png" width="156" height="163" alt=""/></p>
+<p style="text-align: center; font-size: 50px;">HOT BEANS WEB</p>
+<div class="topnav"> <a href="index.html" target="_self"> Home</a> <a href="job Specification.html" target="_self">Job Specification</a> <a href="courses.html" target="_self">Courses</a> <a href="team.html" target="_self">Team</a> </div>
+<div class="row">
+  <div class="column middle">
+    <h2>Courses</h2>
+    <p>Welcome to our web page on web development courses! Here, you'll find a wide variety of courses to help you build the skills you need to create powerful and engaging websites. Whether you're a beginner looking to learn the basics of HTML and CSS or an experienced developer seeking to refine your skills in JavaScript, PHP, or other languages, we've got you covered. Our courses are taught by experienced professionals who are passionate about sharing their knowledge and helping you succeed in the exciting and dynamic world of web development. Browse our offerings today and start building the website of your dreams!</p>
+    <p><a href="https://brainstation.io/london/coding-bootcamp?utm_keyword=web%20development%20courses&utm_network=g&utm_matchtype=e&utm_creative=481016804529&utm_target=&utm_placement=&utm_device=c&utm_campaign=11659071498&utm_adgroup=113823000215&utm_source=AdWords&utm_target_id=kwd-12372542&gclid=EAIaIQobChMIkNikl7nv_gIVh6ztCh1__gfmEAAYASAAEgKiMvD_BwE">BrainStation </a></p>
+    <p>The BrainStation website offers a coding bootcamp course in London, and it appears to meet the requirements of potential clients in a few different ways.</p>
+    <p>Firstly, the website provides clear and concise information about the course offerings, including the schedule, duration, and curriculum of the bootcamp. This information is important for clients who are interested in the program, as they need to know what they will be learning and how long it will take before they commit to signing up.</p>
+    <p>Additionally, the website offers various resources and tools for potential clients to learn more about the bootcamp and determine whether it is a good fit for them. These resources include an FAQ section, student reviews and testimonials, and a free information session that interested parties can sign up for.</p>
+    <p>The website also offers an easy and streamlined process for signing up for the bootcamp, which can be done directly through the website. This simplifies the enrollment process for clients and makes it more likely that they will follow through and sign up for the course.</p>
+    <p>Overall, the BrainStation website appears to meet clients' requirements by providing clear and informative details about the bootcamp, offering various resources to help potential clients make an informed decision, and providing a straightforward enrollment process.</p>
+    <p>&nbsp;</p>
+    <p><a href="https://www.udacity.com/enterprise/programming?utm_source=google_enterprise&utm_medium=cpc&utm_campaign=g_s_programming_emea_ent&utm_term=web%20developer%20courses&gad=1&gclid=EAIaIQobChMIkNikl7nv_gIVh6ztCh1__gfmEAAYAiAAEgLLpvD_BwE">Udacity</a></p>
+    <p>The Udacity website offers a range of programming courses for enterprise clients, and it appears to meet the requirements of potential clients in several ways.</p>
+    <p>Firstly, the website provides a clear and comprehensive overview of the programming courses available, including the skills and knowledge that clients will acquire upon completion. This information is important for clients who are considering investing in the courses, as they need to know what they will be learning and how it will benefit their organization.</p>
+    <p>Additionally, the website offers various resources and tools to help clients make an informed decision about which course is right for them. These resources include a course syllabus, student reviews, and a free trial option, which allows potential clients to experience the course content before committing to purchase.</p>
+    <p>The website also provides information about the instructors who teach the courses, as well as the support available to clients during and after completion of the program. This can be reassuring for clients who want to know that they will have access to high-quality instruction and assistance throughout their learning journey.</p>
+    <p>Finally, the Udacity website offers a streamlined and convenient enrollment process, which allows clients to sign up for courses online quickly and easily. This simplifies the process for clients and makes it more likely that they will follow through and invest in the program.</p>
+    <p>Overall, the Udacity website appears to meet clients' requirements by providing clear and comprehensive information about the courses available, offering various resources to help clients make informed decisions, and providing a convenient enrollment process.</p>
+    <p>&nbsp;</p>
+    <p><a href="https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=web%20development%20courses&utm_campaign=CI+-+UK+-+Search+-+NB&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14153066350&hsa_grp=134105152228&hsa_ad=635785096303&hsa_src=g&hsa_tgt=kwd-12372542&hsa_kw=web%20development%20courses&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=EAIaIQobChMIkNikl7nv_gIVh6ztCh1__gfmEAAYAyAAEgJCd_D_BwE">Code institute</a></p>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <p>The Code Institute website offers a full-stack software development diploma program, and it appears to meet the requirements of potential clients in a number of different ways.</p>
+                <p>Firstly, the website provides detailed information about the diploma program, including the curriculum, structure, and learning outcomes. This information is important for clients who are considering enrolling in the program, as they need to know what they will be learning and how the program will benefit them.</p>
+                <p>Additionally, the website offers various resources and tools to help potential clients determine whether the program is right for them. These resources include a detailed FAQ section, student testimonials and case studies, and a free trial option, which allows potential clients to experience the program content before committing to enroll.</p>
+                <p>The website also provides information about the instructors who teach the program, as well as the support available to students during and after completion of the program. This can be reassuring for clients who want to know that they will have access to high-quality instruction and assistance throughout their learning journey.</p>
+                <p>Finally, the Code Institute website offers a convenient and streamlined enrollment process, which allows clients to sign up for the program online quickly and easily. This simplifies the process for clients and makes it more likely that they will follow through and enroll in the program.</p>
+                <p>Overall, the Code Institute website appears to meet clients' requirements by providing comprehensive information about the diploma program, offering various resources to help clients make informed decisions, and providing a convenient enrollment process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <p>&nbsp;</p>
+  <p>
+    <map name="MapMap">
+      <area shape="circle" coords="82,123,21" href="#">
+    </map>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+
+<div class="footer">
+  <p><img src="Connect-with-Us-Social-Icons-in-Astra-Footer-Section.jpg" alt="" width="690" height="212" usemap="#Map"/>
+    <map name="Map"><area shape="circle" coords="344,125,21" href="https://www.youtube.com/" target="_blank"><area shape="circle" coords="82,123,21" href="https://en-gb.facebook.com/" target="_blank" alt=""><area shape="circle" coords="609,124,21" href="https://blog.hubspot.com/blog/tabid/6307/bid/5847/a-marketer-s-guide-to-html5.aspx" target="_blank"><area shape="circle" coords="543,124,21" href="https://www.google.com/gmail/about/" target="_blank" alt=""><area shape="circle" coords="478,127,21" href="https://www.whatsapp.com/" target="_blank" alt=""><area shape="circle" coords="411,125,21" href="https://uk.indeed.com/" target="_blank"><area shape="circle" coords="277,124,21" href="https://www.instagram.com/" target="_blank"><area shape="circle" coords="145,126,21" href="https://twitter.com" target="_blank">
+      <area shape="circle" coords="211,125,21" href="https://www.pinterest.co.uk/" target="_blank">
+    </map>
+  </p>
+</div>
+  
+</body>
+</html>
