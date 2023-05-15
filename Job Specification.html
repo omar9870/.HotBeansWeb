@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 50%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<p style="text-align: center; font-size: 50px;"><img src="logo.png" width="156" height="163" alt=""/></p>
+<p style="text-align: center; font-size: 50px;">HOT BEANS WEB</p>
+<div class="topnav"> <a href="index.html" target="_self"> Home</a> <a href="job Specification.html" target="_self">Job Specification</a> <a href="courses.html" target="_self">Courses</a> <a href="team.html" target="_self">Team</a> </div>
+<div class="row">
+  <div class="column side">
+    <h2>Job Specification</h2>
+    <p>&nbsp; </p>
+    <p>&nbsp;Web Developer Job Summary:&nbsp;</p>
+    <p>We are seeking a highly skilled and motivated Web Developer to join our dynamic team. The successful candidate will be responsible for designing, developing, and maintaining our company's websites and web applications. The ideal candidate should have a strong understanding of web development principles, excellent problem-solving skills, and the ability to work collaboratively with cross-functional teams.&nbsp;</p>
+    <p>Responsibilities: Design, develop, and maintain responsive websites and web applications. Collaborate with designers and stakeholders to understand project requirements and translate them into functional websites. Write clean, efficient, and well-documented code using best practices. Conduct thorough testing and debugging of web applications to ensure high-quality deliverables. Optimize websites for maximum speed and scalability. Stay up-to-date with the latest web development trends and technologies. Provide technical support and troubleshooting for existing websites and applications. Collaborate with cross-functional teams to ensure seamless integration of front-end and back-end components.</p>
+    <p>&nbsp;Qualifications: Education and Experience: Bachelor's degree in Computer Science, Web Development, or a related field (or equivalent experience). Proven work experience as a Web Developer or similar role. Strong portfolio of previous web development projects.&nbsp;</p>
+    <p>Technical Skills: Proficiency in HTML, CSS, and JavaScript. Experience with front-end frameworks and libraries (e.g., React, Angular, Vue.js). Solid understanding of server-side CSS preprocessors (e.g., Sass, Less). Familiarity with version control systems (e.g., Git). Knowledge of back-end programming languages (e.g., PHP, Python, Ruby) and frameworks (e.g., Laravel, Django, Ruby on Rails). Experience with database systems (e.g., MySQL, PostgreSQL, MongoDB). Understanding of responsive design principles and mobile optimization. Familiarity with web performance optimization techniques. Working knowledge of web security principles.&nbsp;</p>
+    <p>Soft Skills: Strong problem-solving and analytical skills. Excellent attention to detail and ability to adhere to project deadlines. Effective communication and interpersonal skills. Ability to work both independently and collaboratively in a team environment. Adaptability and willingness to learn new technologies and programming languages.&nbsp;</p>
+    <p>Additional Assets (optional): Experience with e-commerce platforms (e.g., Shopify, Magento). Knowledge of SEO best practices. Familiarity with user experience (UX) and user interface (UI) design principles. Understanding of accessibility standards and guidelines.&nbsp;</p>
+    <p>Note: This job specification is a general outline and may be modified to meet specific job requirements and organizational needs.&nbsp;</p>
+  </div>
+  
+  <div class="column middle">
+    <h2> Application Form</h2>
+    <div>
+      <div>
+        <div>Get in Touch</div>
+        <div>
+          <div>Please fill in the form below to get in touch with us.</div>
+        </div>
+      </div>
+    </div>
+    <form enctype="multipart/form-data">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <label for="62ce755ce747c">First name</label>
+                </div>
+                <div>
+                  <div></div>
+                  <input id="62ce755ce747c" aria-required="false" type="shortText" autocomplete="off" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <label for="lgwcvpim">Last name</label>
+                </div>
+                <div>
+                  <div></div>
+                  <input id="lgwcvpim" aria-required="false" type="shortText" autocomplete="off" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <label for="62ce755ce74d0">Email address</label>
+                </div>
+                <div>
+                  <div>example@domain.com</div>
+                  <input type="email" required="required" id="62ce755ce74d0" autocomplete="off" value="" aria-required="false">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <label for="62ce755ce7520">Phone Number</label>
+                </div>
+                <div>
+                  <div></div>
+                  <input id="62ce755ce7520" aria-required="false" type="phone" autocomplete="off" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <label for="62ce755ce75ab">Message</label>
+                </div>
+                <div>
+                  <div>Tell us briefly about your needs</div>
+                  <p>
+                    <textarea name="62ce755ce75ab" rows="9" required="required" id="62ce755ce75ab" aria-required="false"></textarea>
+                  </p>
+                  <p>
+                    <label for="fileField">Upload CV:</label>
+                    <input name="fileField" type="file" required="required" id="fileField">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div aria-required="false">
+              <label>
+              <input type="checkbox" required="required" id="consent" value="<div>I’ve read and agree with <a href='https://elfsight.com' rel='noopener noreferrer' target='_blank'>Terms of Service</a> and <a href='https://elfsight.com' rel='noopener noreferrer' target='_blank'><span>Privacy Policy</span></a></div>">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button aria-label="Submit" type="button" tabindex="0">Send Message</button> 
+        </div>
+      </div>
+    </form>
+    <p>&nbsp;</p>
+  </div>
+  <p>&nbsp;</p>
+  <p>
+    <map name="MapMap">
+      <area shape="circle" coords="82,123,21" href="#">
+    </map>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+
+<div class="footer">
+  <p><img src="Connect-with-Us-Social-Icons-in-Astra-Footer-Section.jpg" alt="" width="690" height="212" usemap="#Map"/>
+    <map name="Map"><area shape="circle" coords="344,125,21" href="https://www.youtube.com/" target="_blank"><area shape="circle" coords="82,123,21" href="https://en-gb.facebook.com/" target="_blank" alt=""><area shape="circle" coords="609,124,21" href="https://blog.hubspot.com/blog/tabid/6307/bid/5847/a-marketer-s-guide-to-html5.aspx" target="_blank"><area shape="circle" coords="543,124,21" href="https://www.google.com/gmail/about/" target="_blank" alt=""><area shape="circle" coords="478,127,21" href="https://www.whatsapp.com/" target="_blank" alt=""><area shape="circle" coords="411,125,21" href="https://uk.indeed.com/" target="_blank"><area shape="circle" coords="277,124,21" href="https://www.instagram.com/" target="_blank"><area shape="circle" coords="145,126,21" href="https://twitter.com" target="_blank">
+      <area shape="circle" coords="211,125,21" href="https://www.pinterest.co.uk/" target="_blank">
+    </map>
+  </p>
+</div>
+  
+</body>
+</html>
